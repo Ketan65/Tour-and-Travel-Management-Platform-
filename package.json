@@ -1,0 +1,20 @@
+{
+  "name": "tour-travel-management",
+  "version": "1.0.0",
+  "description": "Tour & Travel Management Platform - 4-Member Collaborative Frontend Project",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "dev": "npx serve -l 3000 .",
+    "test": "node -e \"console.log('Validating structure...'); const fs = require('fs'); ['index.html', 'pages/auth.html', 'pages/dashboard.html', 'pages/tours.html'].forEach(f => { if(!fs.existsSync(f)) throw new Error('Missing ' + f); }); console.log('All files verified successfully!');\""
+  },
+  "keywords": [
+    "travel",
+    "tour-management",
+    "collaboration",
+    "frontend",
+    "git-workflow"
+  ],
+  "author": "Ketan Verma & Team",
+  "license": "MIT"
+}

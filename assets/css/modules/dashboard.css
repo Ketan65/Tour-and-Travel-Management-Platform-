@@ -1,0 +1,54 @@
+/* Module: User Profile & Bookings UI (Member 2 - feature/user) */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+.profile-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+.profile-avatar-wrapper img {
+  width: 90px;
+  height: 90px;
+  border-radius: var(--radius-full);
+  margin: 0 auto 1rem;
+  border: 3px solid var(--color-primary);
+}
+.dash-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+.dash-nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  color: var(--color-dark-muted);
+}
+.dash-nav a:hover, .dash-nav a.active {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+.booking-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+}
+@media (max-width: 850px) {
+  .dashboard-grid { grid-template-columns: 1fr; }
+  .booking-card { flex-direction: column; align-items: flex-start; gap: 1rem; }
+}
