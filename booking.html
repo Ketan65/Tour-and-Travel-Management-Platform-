@@ -1,0 +1,271 @@
+<!-- <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Booking | Wanderly</title><link rel="stylesheet" href="css/style.css"></head><body><header class="site-header"><div class="container"><a href="index.html" class="brand-logo">Wanderly</a><nav class="main-nav"><ul>
+<li><a class="" href="index.html">Home</a></li>
+<li><a class="" href="destinations.html">Destinations</a></li>
+<li><a class="active" href="packages.html">Packages</a></li>
+<li><a class="" href="hotels.html">Hotels</a></li>
+<li><a class="" href="transport.html">Transportation</a></li>
+<li><a class="" href="contact.html">Contact</a></li>
+<li><a class="" href="login.html">Login</a></li>
+</ul></nav></div></header><main class="container"><div class="page-banner"><img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1600&q=85" alt="Booking your trip"></div><div class="page-title-block"><div class="breadcrumb"><a href="index.html">Home</a> / Booking</div><h1>Build your booking</h1><p>Choose a package, pick your stay and transport, add your details, then review and submit one complete request. Everything for your trip lives on this one page.</p></div>
+
+<div id="rajasthan"></div><div id="himalayan"></div><div id="kerala"></div><div id="goa"></div><div id="kashmir"></div><div id="rishikesh"></div>
+
+<div class="form-wrap">
+<form class="form-card" action="booking-confirmation.html" method="get">
+
+<div class="booking-step">
+<h2>1. Choose your package</h2>
+<p class="step-note">Click a card to select it. The chosen package is highlighted.</p>
+<div class="option-grid">
+
+<div class="option-card">
+<input type="radio" name="package" value="rajasthan" data-price="24999" data-nights="4" id="pkg-rajasthan" checked>
+<label for="pkg-rajasthan">
+<span class="option-title">Royal Rajasthan Escape</span>
+<span class="option-meta">5 Days / 4 Nights &middot; Jaipur &rarr; Jodhpur &rarr; Udaipur</span>
+<span class="option-price">&#8377;24,999 per person</span>
+</label>
+</div>
+
+<div class="option-card">
+<input type="radio" name="package" value="himalayan" data-price="27500" data-nights="5" id="pkg-himalayan">
+<label for="pkg-himalayan">
+<span class="option-title">Himalayan Retreat</span>
+<span class="option-meta">6 Days / 5 Nights &middot; Manali + scenic excursions</span>
+<span class="option-price">&#8377;27,500 per person</span>
+</label>
+</div>
+
+<div class="option-card">
+<input type="radio" name="package" value="kerala" data-price="29900" data-nights="5" id="pkg-kerala">
+<label for="pkg-kerala">
+<span class="option-title">Kerala Backwater Journey</span>
+<span class="option-meta">6 Days / 5 Nights &middot; Kochi &rarr; Munnar &rarr; Alappuzha</span>
+<span class="option-price">&#8377;29,900 per person</span>
+</label>
+</div>
+
+<div class="option-card">
+<input type="radio" name="package" value="goa" data-price="22500" data-nights="4" id="pkg-goa">
+<label for="pkg-goa">
+<span class="option-title">Goa Coastal Escape</span>
+<span class="option-meta">5 Days / 4 Nights &middot; North Goa &rarr; Panjim &rarr; South Goa</span>
+<span class="option-price">&#8377;22,500 per person</span>
+</label>
+</div>
+
+<div class="option-card">
+<input type="radio" name="package" value="kashmir" data-price="31500" data-nights="5" id="pkg-kashmir">
+<label for="pkg-kashmir">
+<span class="option-title">Kashmir Valley Explorer</span>
+<span class="option-meta">6 Days / 5 Nights &middot; Srinagar &rarr; Gulmarg &rarr; Pahalgam</span>
+<span class="option-price">&#8377;31,500 per person</span>
+</label>
+</div>
+
+<div class="option-card">
+<input type="radio" name="package" value="rishikesh" data-price="16900" data-nights="3" id="pkg-rishikesh">
+<label for="pkg-rishikesh">
+<span class="option-title">Rishikesh Adventure Break</span>
+<span class="option-meta">4 Days / 3 Nights &middot; Rishikesh + riverside stays</span>
+<span class="option-price">&#8377;16,900 per person</span>
+</label>
+</div>
+
+</div>
+</div>
+
+<div class="booking-step">
+<h2>2. Choose your stay</h2>
+<p class="step-note">Room type applies across your whole stay.</p>
+<div class="option-grid">
+
+<div class="option-card">
+<input type="radio" name="room" value="Standard Room" data-price="3200" id="room-standard" checked>
+<label for="room-standard">
+<span class="option-title">Standard Room</span>
+<span class="option-meta">Comfortable, budget-friendly stay</span>
+<span class="option-price">&#8377;3,200 / night</span>
+</label>
+</div>
+
+<div class="option-card">
+<input type="radio" name="room" value="Deluxe Room" data-price="4800" id="room-deluxe">
+<label for="room-deluxe">
+<span class="option-title">Deluxe Room</span>
+<span class="option-meta">Extra space and better views</span>
+<span class="option-price">&#8377;4,800 / night</span>
+</label>
+</div>
+
+<div class="option-card">
+<input type="radio" name="room" value="Family Room" data-price="6100" id="room-family">
+<label for="room-family">
+<span class="option-title">Family Room</span>
+<span class="option-meta">Best for 3 or more travellers</span>
+<span class="option-price">&#8377;6,100 / night</span>
+</label>
+</div>
+
+</div>
+</div>
+
+<div class="booking-step">
+<h2>3. Choose your transport</h2>
+<p class="step-note">This is how you'll travel to and between destinations.</p>
+<div class="option-grid">
+
+<div class="option-card">
+<input type="radio" name="transport" value="Flight" data-price="5500" id="tr-flight" checked>
+<label for="tr-flight">
+<span class="option-title">Flight</span>
+<span class="option-meta">Fastest, best for long distances</span>
+<span class="option-price">from &#8377;5,500</span>
+</label>
+</div>
+
+<div class="option-card">
+<input type="radio" name="transport" value="Train" data-price="1800" id="tr-train">
+<label for="tr-train">
+<span class="option-title">Train</span>
+<span class="option-meta">Scenic and comfortable</span>
+<span class="option-price">from &#8377;1,800</span>
+</label>
+</div>
+
+<div class="option-card">
+<input type="radio" name="transport" value="AC Bus" data-price="1200" id="tr-bus">
+<label for="tr-bus">
+<span class="option-title">AC Bus</span>
+<span class="option-meta">Practical for shorter routes</span>
+<span class="option-price">from &#8377;1,200</span>
+</label>
+</div>
+
+<div class="option-card">
+<input type="radio" name="transport" value="Private Cab" data-price="3000" id="tr-cab">
+<label for="tr-cab">
+<span class="option-title">Private Cab</span>
+<span class="option-meta">Flexible, door to door</span>
+<span class="option-price">from &#8377;3,000</span>
+</label>
+</div>
+
+</div>
+</div>
+
+<div class="booking-step">
+<h2>4. Optional add-ons</h2>
+<p class="step-note">Select anything you'd like included with your trip.</p>
+<div class="option-grid">
+
+<div class="option-card">
+<input type="checkbox" name="addon_insurance" value="yes" data-price="499" id="addon-insurance">
+<label for="addon-insurance">
+<span class="option-title">Travel Insurance</span>
+<span class="option-meta">Covers trip delays and medical needs</span>
+<span class="option-price">&#8377;499</span>
+</label>
+</div>
+
+<div class="option-card">
+<input type="checkbox" name="addon_pickup" value="yes" data-price="799" id="addon-pickup">
+<label for="addon-pickup">
+<span class="option-title">Airport Pickup</span>
+<span class="option-meta">Private transfer on arrival</span>
+<span class="option-price">&#8377;799</span>
+</label>
+</div>
+
+<div class="option-card">
+<input type="checkbox" name="addon_guide" value="yes" data-price="1299" id="addon-guide">
+<label for="addon-guide">
+<span class="option-title">Guided City Tour</span>
+<span class="option-meta">Local guide for one full day</span>
+<span class="option-price">&#8377;1,299</span>
+</label>
+</div>
+
+</div>
+</div>
+
+<div class="booking-step">
+<h2>5. Trip and traveller details</h2>
+<div class="form-row"><div class="form-group"><label for="date">Preferred travel date *</label><input id="date" name="date" type="date" required></div><div class="form-group"><label for="travellers">Travellers *</label><input id="travellers" name="travellers" type="number" min="1" max="20" value="2" required></div></div>
+<div class="form-row"><div class="form-group"><label for="name">Full name *</label><input id="name" name="name" required></div><div class="form-group"><label for="email">Email *</label><input id="email" name="email" type="email" required></div></div>
+<div class="form-row"><div class="form-group"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" required></div><div class="form-group"><label for="city">Departure city</label><input id="city" name="city" placeholder="e.g. Delhi"></div></div>
+</div>
+
+<p class="form-note">Review your selections and estimated total on the right before submitting. Our team will confirm final pricing and availability with you directly.</p>
+<div class="button-row"><button class="btn" type="submit">Book Now</button><a class="btn btn-secondary" href="packages.html">Back to Packages</a></div>
+</form>
+
+<aside>
+<div class="content-box" id="estimate-box">
+<h2>Your live estimate</h2>
+<p class="small">This updates automatically as you choose above.</p>
+<table class="receipt-table">
+<tr><td class="label">Package (<span id="est-travellers-label">2</span> traveller(s))</td><td class="value" id="est-package">&#8377;0</td></tr>
+<tr><td class="label">Stay (<span id="est-nights-label">0</span> night(s))</td><td class="value" id="est-room">&#8377;0</td></tr>
+<tr><td class="label">Transport (per traveller)</td><td class="value" id="est-transport">&#8377;0</td></tr>
+<tr><td class="label">Add-ons</td><td class="value" id="est-addons">&#8377;0</td></tr>
+<tr><td class="label"><strong>Estimated Total</strong></td><td class="value" id="est-total"><strong>&#8377;0</strong></td></tr>
+</table>
+<p class="small">An estimate to help you decide. Your exact total is confirmed after you submit.</p>
+</div>
+<div class="content-box" style="margin-top:20px;">
+<h2>Before you submit</h2>
+<ul class="clean-list"><li>Open a package's full itinerary from the Packages page if you want day-wise details first.</li><li>Use Hotels or Transportation pages to browse options before deciding.</li><li>Use Contact for general support or questions.</li><li>You'll receive a booking summary with a reference number right after submitting.</li></ul>
+</div>
+</aside>
+</div>
+
+<!-- <script>
+function calculateEstimate(){
+  var travellers = parseInt(document.getElementById("travellers").value, 10);
+  if (!travellers || travellers < 1) { travellers = 1; }
+
+  var packageInput = document.querySelector('input[name="package"]:checked');
+  var roomInput = document.querySelector('input[name="room"]:checked');
+  var transportInput = document.querySelector('input[name="transport"]:checked');
+  var addonInputs = document.querySelectorAll('input[type="checkbox"]:checked');
+
+  var packagePrice = packageInput ? parseInt(packageInput.getAttribute("data-price"), 10) : 0;
+  var nights = packageInput ? parseInt(packageInput.getAttribute("data-nights"), 10) : 0;
+  var roomPrice = roomInput ? parseInt(roomInput.getAttribute("data-price"), 10) : 0;
+  var transportPrice = transportInput ? parseInt(transportInput.getAttribute("data-price"), 10) : 0;
+
+  var addonsTotal = 0;
+  addonInputs.forEach(function(box){
+    addonsTotal += parseInt(box.getAttribute("data-price"), 10);
+  });
+
+  var packageTotal = packagePrice * travellers;
+  var roomTotal = roomPrice * nights;
+  var transportTotal = transportPrice * travellers;
+  var grandTotal = packageTotal + roomTotal + transportTotal + addonsTotal;
+
+  function formatRs(n){
+    return "\u20B9" + n.toLocaleString("en-IN");
+  }
+
+  document.getElementById("est-travellers-label").textContent = travellers;
+  document.getElementById("est-nights-label").textContent = nights;
+  document.getElementById("est-package").textContent = formatRs(packageTotal);
+  document.getElementById("est-room").textContent = formatRs(roomTotal);
+  document.getElementById("est-transport").textContent = formatRs(transportTotal);
+  document.getElementById("est-addons").textContent = formatRs(addonsTotal);
+  document.getElementById("est-total").innerHTML = "<strong>" + formatRs(grandTotal) + "</strong>";
+}
+
+var bookingForm = document.querySelector(".form-card");
+bookingForm.addEventListener("change", calculateEstimate);
+bookingForm.addEventListener("input", calculateEstimate);
+calculateEstimate();
+</script> -->
+</main><footer class="site-footer"><div class="container"><div class="footer-grid">
+<div><h3>Wanderly</h3><p>Plan destinations, compare travel options, choose stays and send a complete booking request from one place.</p></div>
+<div><h4>Explore</h4><ul><li><a href="destinations.html">Destinations</a></li><li><a href="packages.html">Tour Packages</a></li><li><a href="hotels.html">Hotels</a></li><li><a href="transport.html">Transportation</a></li></ul></div>
+<div><h4>Plan</h4><ul><li><a href="booking.html">Book a Package</a></li><li><a href="enquiry.html">Service Enquiry</a></li><li><a href="contact.html">Contact Support</a></li></ul></div>
+<div><h4>Account</h4><ul><li><a href="login.html">Login</a></li><li><a href="index.html#how-it-works">How It Works</a></li><li><a href="index.html#why-wanderly">Why Wanderly</a></li></ul></div>
+</div><div class="footer-bottom">© 2026 Wanderly. All rights reserved.</div></div></footer></body></html> -->
