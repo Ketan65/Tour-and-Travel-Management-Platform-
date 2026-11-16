@@ -1,0 +1,48 @@
+/* Wanderly admin panel — extends style.css */
+body.admin{ background:#f4f7f6; background-image:none; }
+.site-header.admin-bar{ border-bottom-color:#ff7a4a; }
+.admin-tag{ background:#ff7a4a; color:#fff; font-size:.7rem; padding:2px 8px; margin-left:10px; vertical-align:middle; letter-spacing:.06em; }
+.admin-wrap{ display:flex; flex-wrap:wrap; gap:22px; width:96%; max-width:1280px; margin:26px auto 50px; align-items:flex-start; }
+.admin-side{ flex:0 0 220px; background:#0e4c46; padding:14px 0; position:sticky; top:84px; }
+.admin-side a{ display:block; color:#dceee9; padding:11px 20px; border-left:4px solid transparent; font-size:.95rem; }
+.admin-side a:hover{ background:rgba(255,255,255,.08); }
+.admin-side a.active{ background:#0a332e; color:#fff; border-left-color:#ffb547; font-weight:bold; }
+.admin-side hr{ border:none; border-top:1px solid rgba(255,255,255,.15); margin:10px 16px; }
+.admin-main{ flex:1 1 640px; min-width:0; }
+.admin-main h1{ font-size:1.9rem; margin-top:0; }
+.admin-sub{ color:#5a6f6b; margin-top:-4px; }
+.panel{ background:#fff; border:1px solid #e0e8e5; border-top:4px solid #ffb547; padding:18px 20px; margin-bottom:20px; }
+.panel h2{ font-size:1.2rem; margin-top:0; }
+.panel-grid{ display:flex; flex-wrap:wrap; gap:20px; }
+.panel-grid .panel{ flex:1 1 360px; }
+.table-wrap{ overflow-x:auto; }
+.data-table{ width:100%; border-collapse:collapse; font-size:.9rem; }
+.data-table th{ background:#fff3de; color:#0e4c46; text-align:left; padding:10px; white-space:nowrap; border-bottom:2px solid #ffe3b0; }
+.data-table td{ padding:10px; border-bottom:1px solid #eef2f0; vertical-align:middle; }
+.data-table tr:hover td{ background:#fafcfb; }
+.empty-cell{ text-align:center; color:#5a6f6b; padding:28px !important; }
+.actions{ white-space:nowrap; }
+.mini{ background:#fff; border:1px solid #0e4c46; color:#0e4c46; padding:4px 10px; font-size:.8rem; cursor:pointer; margin-right:4px; font-family:inherit; }
+.mini:hover{ background:#eaf7f2; }
+.mini.ok{ border-color:#1f7a3d; color:#1f7a3d; } .mini.no{ border-color:#b3261e; color:#b3261e; }
+.thumb{ width:64px; height:44px; object-fit:cover; border:1px solid #ffe3b0; }
+.toolbar{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:14px; }
+.toolbar input, .toolbar select{ width:auto; flex:1 1 160px; }
+.toolbar .btn{ margin:0; padding:9px 16px; }
+.toolbar .grow{ flex:2 1 240px; }
+.bar-row{ display:flex; align-items:center; gap:10px; margin-bottom:10px; font-size:.88rem; }
+.bar-l{ flex:0 0 150px; color:#22312e; } .bar-v{ flex:0 0 80px; text-align:right; font-weight:bold; color:#0e4c46; }
+.bar-track{ flex:1; background:#eef2f0; height:16px; }
+.bar-fill{ height:100%; background:#0f6f66; min-width:2px; transition:width .5s; }
+.bar-pending{ background:#ffb547; } .bar-approved{ background:#1f7a3d; } .bar-cancelled{ background:#b3261e; }
+.tabs{ display:flex; gap:6px; margin-bottom:14px; }
+.tabs button{ background:#fff; border:1px solid #cdd9d5; padding:9px 18px; cursor:pointer; font-family:inherit; font-size:.95rem; }
+.tabs button.on{ background:#0e4c46; color:#fff; border-color:#0e4c46; }
+.tabs .n{ background:#ff7a4a; color:#fff; border-radius:10px; padding:0 7px; font-size:.75rem; margin-left:6px; }
+.switch{ position:relative; display:inline-block; width:42px; height:22px; margin:0; }
+.switch input{ opacity:0; width:0; height:0; }
+.switch span{ position:absolute; inset:0; background:#cdd9d5; border-radius:22px; cursor:pointer; transition:.2s; }
+.switch span::before{ content:""; position:absolute; width:16px; height:16px; left:3px; top:3px; background:#fff; border-radius:50%; transition:.2s; }
+.switch input:checked + span{ background:#1f7a3d; } .switch input:checked + span::before{ transform:translateX(20px); }
+.notice{ background:#fff3de; border-left:5px solid #ffb547; padding:10px 14px; font-size:.88rem; margin-bottom:18px; }
+@media(max-width:900px){ .admin-side{ flex:1 1 100%; position:static; display:flex; flex-wrap:wrap; padding:6px; } .admin-side a{ padding:8px 12px; border-left:none; border-bottom:3px solid transparent; } .admin-side a.active{ border-bottom-color:#ffb547; } .admin-side hr{ display:none; } }
