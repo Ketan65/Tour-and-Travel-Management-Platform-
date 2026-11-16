@@ -1,0 +1,32 @@
+///<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Dashboard | Wanderly Admin</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body class="admin" data-page="admin-dashboard" data-root="../" data-auth="admin">
+    <header class="site-header admin-bar"><div class="container"><a href="../index.html" class="brand-logo">Wanderly<span class="admin-tag">ADMIN</span></a>
+      <nav class="main-nav"><ul><li><a href="../index.html">View Site</a></li><li><a href="#" id="admin-logout">Logout</a></li></ul></nav></div></header>
+    <div class="admin-wrap">
+      <aside class="admin-side"><a href="dashboard.html" class="active">Overview</a><a href="bookings.html">Bookings</a><a href="packages.html">Packages</a><a href="destinations.html">Destinations</a><a href="users.html">Users</a><a href="enquiries.html">Enquiries & Messages</a><hr /><a href="../index.html">&larr; Back to website</a></aside>
+      <section class="admin-main">
+        <h1>Admin dashboard</h1><p class="admin-sub">Overview of bookings, users and catalogue.</p>
+        <div class="notice">Frontend-only demo: data lives in this browser's LocalStorage, so bookings made on other computers will not appear here.</div>
+        <div class="stats-row" id="a-stats"></div>
+        <div class="panel-grid" style="margin-top:20px">
+          <div class="panel"><h2>Bookings by status</h2><div id="chart-status"></div></div>
+          <div class="panel"><h2>Revenue by package <span class="small">(excl. cancelled)</span></h2><div id="chart-rev"></div></div>
+        </div>
+        <div class="panel"><h2>Latest bookings</h2><div class="table-wrap"><table class="data-table"><thead><tr><th>ID</th><th>Customer</th><th>Package</th><th>Amount</th><th>Status</th></tr></thead><tbody id="a-recent"></tbody></table></div><div class="button-row"><a class="btn" href="bookings.html">Manage Bookings</a></div></div>
+        <div class="panel"><h2>Data tools</h2><p class="small">Back up everything as JSON, restore a backup, or reset to the demo data.</p>
+          <div class="button-row"><button class="btn" id="btn-export" type="button">Export JSON</button><label class="btn btn-secondary" style="cursor:pointer;margin-bottom:0">Import JSON<input id="file-import" type="file" accept="application/json,.json" hidden /></label><button class="btn btn-danger" id="btn-reset" type="button">Reset demo data</button></div></div>
+      </section>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/admin-dashboard.js"></script>
+  </body>
+</html>
