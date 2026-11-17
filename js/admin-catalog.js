@@ -1,4 +1,5 @@
-///(function () {
+/* admin-catalog.js — admin Package + Destination management (add / edit / delete / activate) */
+(function () {
   "use strict";
   var W = window.WD, page = document.body.getAttribute("data-page"); if (!W.me() || W.me().role !== "admin") return;
   var lines = function (s) { return s.split("\n").map(function (x) { return x.trim(); }).filter(Boolean); };
