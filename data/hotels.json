@@ -1,0 +1,122 @@
+[
+  {
+    "id": "h1",
+    "name": "The Heritage Courtyard",
+    "city": "Jaipur",
+    "type": "Heritage stay",
+    "price": 4200,
+    "rating": 4.5,
+    "amenities": [
+      "Breakfast",
+      "Wi-Fi",
+      "Central location"
+    ],
+    "img": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85",
+    "short": "Central access, breakfast option and comfortable rooms."
+  },
+  {
+    "id": "h2",
+    "name": "Sea Breeze Retreat",
+    "city": "Goa",
+    "type": "Beach stay",
+    "price": 5100,
+    "rating": 4.4,
+    "amenities": [
+      "Pool",
+      "Beach access",
+      "Wi-Fi"
+    ],
+    "img": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=85",
+    "short": "Good for relaxed coastal trips and multi-night stays."
+  },
+  {
+    "id": "h3",
+    "name": "Valley View Lodge",
+    "city": "Manali",
+    "type": "Mountain stay",
+    "price": 4600,
+    "rating": 4.3,
+    "amenities": [
+      "Mountain view",
+      "Heater",
+      "Breakfast"
+    ],
+    "img": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=85",
+    "short": "Quiet setting with mountain views and local access."
+  },
+  {
+    "id": "h4",
+    "name": "Backwater Haven",
+    "city": "Kerala",
+    "type": "Backwater stay",
+    "price": 5800,
+    "rating": 4.7,
+    "amenities": [
+      "Houseboat tours",
+      "Ayurveda spa",
+      "Breakfast"
+    ],
+    "img": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85",
+    "short": "A peaceful option for a slower Kerala itinerary."
+  },
+  {
+    "id": "h5",
+    "name": "Lakefront House",
+    "city": "Kashmir",
+    "type": "Lake-side stay",
+    "price": 6200,
+    "rating": 4.6,
+    "amenities": [
+      "Lake view",
+      "Heater",
+      "Breakfast"
+    ],
+    "img": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=85",
+    "short": "Convenient base for a Srinagar-focused trip."
+  },
+  {
+    "id": "h6",
+    "name": "Lake Pichola Haveli",
+    "city": "Udaipur",
+    "type": "Heritage stay",
+    "price": 5400,
+    "rating": 4.6,
+    "amenities": [
+      "Lake view",
+      "Rooftop dining",
+      "Wi-Fi"
+    ],
+    "img": "https://images.unsplash.com/photo-1589901164570-f9de6556e1c1?auto=format&fit=crop&w=1200&q=85",
+    "short": "Old-city haveli with rooftop evenings over the water."
+  },
+  {
+    "id": "h7",
+    "name": "Ganga Riverside Camp",
+    "city": "Rishikesh",
+    "type": "Riverside stay",
+    "price": 3400,
+    "rating": 4.2,
+    "amenities": [
+      "River view",
+      "Yoga deck",
+      "Breakfast"
+    ],
+    "img": "https://images.unsplash.com/photo-1650341259809-9314b0de9268?auto=format&fit=crop&w=1200&q=85",
+    "short": "Simple riverside camp stay for active, short breaks."
+  },
+  {
+    "id": "h8",
+    "name": "Taj View Residency",
+    "city": "Agra",
+    "type": "City stay",
+    "price": 3900,
+    "rating": 4.1,
+    "amenities": [
+      "Monument view",
+      "Wi-Fi",
+      "Breakfast"
+    ],
+    "img": "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=85",
+    "short": "Practical base close to the main heritage sights."
+  }
+]
