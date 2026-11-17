@@ -1,0 +1,310 @@
+[
+  {
+    "id": "rajasthan",
+    "name": "Royal Rajasthan Escape",
+    "days": 5,
+    "nights": 4,
+    "category": "Heritage",
+    "price": 24999,
+    "featured": true,
+    "active": true,
+    "img": "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1200&q=85",
+    "route": "Jaipur → Jodhpur → Udaipur",
+    "short": "A multi-city heritage route with practical pacing.",
+    "destinations": [
+      "rajasthan",
+      "jaipur",
+      "udaipur"
+    ],
+    "about": "A classic first-timer's route through royal Rajasthan — forts and palaces in the morning, bazaars and street food in the evening. Cities are close enough that transfer days don't eat into sightseeing time. Confirm final availability and pricing when you submit your booking request.",
+    "itinerary": [
+      {
+        "day": "Day 1 — Jaipur",
+        "text": "arrival, hotel check-in and evening old-city walk."
+      },
+      {
+        "day": "Day 2 — Jaipur",
+        "text": "Amer Fort, City Palace, Hawa Mahal and local markets."
+      },
+      {
+        "day": "Day 3 — Jaipur to Jodhpur",
+        "text": "transfer, check-in and evening at the old city."
+      },
+      {
+        "day": "Day 4 — Jodhpur to Udaipur",
+        "text": "scenic transfer with a relaxed city evening."
+      },
+      {
+        "day": "Day 5 — Udaipur",
+        "text": "City Palace area and departure planning."
+      }
+    ],
+    "includes": [
+      "Accommodation for 4 nights",
+      "Breakfast",
+      "Local transfers between listed cities",
+      "Sightseeing plan as described"
+    ],
+    "notes": [
+      "Anything not listed under inclusions",
+      "Personal shopping and optional activities",
+      "Final availability and prices are confirmed separately"
+    ]
+  },
+  {
+    "id": "himalayan",
+    "name": "Himalayan Retreat",
+    "days": 6,
+    "nights": 5,
+    "category": "Mountain",
+    "price": 27500,
+    "featured": true,
+    "active": true,
+    "img": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=85",
+    "route": "Manali + scenic day excursions",
+    "short": "A calm mountain itinerary with flexible outdoor time.",
+    "destinations": [
+      "manali"
+    ],
+    "about": "A slower-paced mountain break built around Manali, with one big excursion day to Solang Valley and the rest left open for cafés, short walks and whatever the weather allows. Confirm final availability and pricing when you submit your booking request.",
+    "itinerary": [
+      {
+        "day": "Day 1 — Manali",
+        "text": "arrival, check-in and local orientation."
+      },
+      {
+        "day": "Day 2 — Manali",
+        "text": "Old Manali, Hidimba area and riverside time."
+      },
+      {
+        "day": "Day 3 — Solang Valley",
+        "text": "full-day mountain excursion."
+      },
+      {
+        "day": "Day 4 — Local exploration",
+        "text": "cafés, viewpoints and flexible leisure time."
+      },
+      {
+        "day": "Day 5 — Scenic excursion",
+        "text": "weather-dependent mountain route."
+      },
+      {
+        "day": "Day 6 — Departure",
+        "text": "breakfast and onward travel."
+      }
+    ],
+    "includes": [
+      "5 nights stay",
+      "Breakfast",
+      "Planned local sightseeing",
+      "Transfers within itinerary"
+    ],
+    "notes": [
+      "Adventure fees unless specifically stated",
+      "Personal expenses",
+      "Weather can affect mountain routes"
+    ]
+  },
+  {
+    "id": "kerala",
+    "name": "Kerala Backwater Journey",
+    "days": 6,
+    "nights": 5,
+    "category": "Nature",
+    "price": 29900,
+    "featured": false,
+    "active": true,
+    "img": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=85",
+    "route": "Kochi → Munnar → Alappuzha",
+    "short": "Hills, backwaters and a relaxed coastal finish.",
+    "destinations": [
+      "kerala"
+    ],
+    "about": "Hills, tea gardens and backwaters in one loop — Munnar for the cool air and views, Alappuzha for houseboats and quiet water. Kochi bookends the trip with a bit of city and heritage. Confirm final availability and pricing when you submit your booking request.",
+    "itinerary": [
+      {
+        "day": "Day 1 — Kochi",
+        "text": "arrival and heritage area orientation."
+      },
+      {
+        "day": "Day 2 — Kochi to Munnar",
+        "text": "transfer and hill-station check-in."
+      },
+      {
+        "day": "Day 3 — Munnar",
+        "text": "tea estates, viewpoints and local exploration."
+      },
+      {
+        "day": "Day 4 — Munnar to Alappuzha",
+        "text": "scenic transfer to the backwaters."
+      },
+      {
+        "day": "Day 5 — Alappuzha",
+        "text": "backwater experience and relaxed local time."
+      },
+      {
+        "day": "Day 6 — Departure",
+        "text": "onward travel after breakfast."
+      }
+    ],
+    "includes": [
+      "5 nights stay",
+      "Breakfast",
+      "Planned transfers",
+      "Sightseeing listed in the itinerary"
+    ],
+    "notes": [
+      "Optional houseboat upgrades",
+      "Lunches and dinners unless listed",
+      "Route timing may change with conditions"
+    ]
+  },
+  {
+    "id": "goa",
+    "name": "Goa Coastal Escape",
+    "days": 5,
+    "nights": 4,
+    "category": "Beach",
+    "price": 22500,
+    "featured": false,
+    "active": true,
+    "img": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=85",
+    "route": "North Goa → Panjim → South Goa",
+    "short": "A balanced beach-and-heritage coastal break.",
+    "destinations": [
+      "goa"
+    ],
+    "about": "A beach trip that doesn't skip the rest of Goa — lively North Goa beaches, Panjim's old Portuguese streets, and calmer South Goa stretches for the last couple of days. Confirm final availability and pricing when you submit your booking request.",
+    "itinerary": [
+      {
+        "day": "Day 1 — Goa",
+        "text": "arrival and beach-side evening."
+      },
+      {
+        "day": "Day 2 — North Goa",
+        "text": "beaches and Fort Aguada area."
+      },
+      {
+        "day": "Day 3 — Panjim",
+        "text": "heritage streets, riverfront and local food."
+      },
+      {
+        "day": "Day 4 — South Goa",
+        "text": "slower beaches and sunset time."
+      },
+      {
+        "day": "Day 5 — Departure",
+        "text": "breakfast and check-out."
+      }
+    ],
+    "includes": [
+      "4 nights stay",
+      "Breakfast",
+      "Planned local transfers",
+      "Sightseeing plan"
+    ],
+    "notes": [
+      "Optional water activities",
+      "Personal expenses",
+      "Beach activities may be weather-dependent"
+    ]
+  },
+  {
+    "id": "kashmir",
+    "name": "Kashmir Valley Explorer",
+    "days": 6,
+    "nights": 5,
+    "category": "Scenic",
+    "price": 31500,
+    "featured": true,
+    "active": true,
+    "img": "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=85",
+    "route": "Srinagar → Gulmarg → Pahalgam",
+    "short": "Lake, meadow and mountain experiences.",
+    "destinations": [
+      "kashmir"
+    ],
+    "about": "Srinagar as your base, with full-day trips out to Gulmarg's meadows and Pahalgam's valleys. Built for travellers who want scenery over a packed checklist. Confirm final availability and pricing when you submit your booking request.",
+    "itinerary": [
+      {
+        "day": "Day 1 — Srinagar",
+        "text": "arrival and Dal Lake area."
+      },
+      {
+        "day": "Day 2 — Srinagar",
+        "text": "local sights and old-city exploration."
+      },
+      {
+        "day": "Day 3 — Gulmarg",
+        "text": "full-day meadow and mountain excursion."
+      },
+      {
+        "day": "Day 4 — Pahalgam",
+        "text": "scenic valley day trip."
+      },
+      {
+        "day": "Day 5 — Srinagar",
+        "text": "flexible leisure and lake-side time."
+      },
+      {
+        "day": "Day 6 — Departure",
+        "text": "check-out and onward travel."
+      }
+    ],
+    "includes": [
+      "5 nights stay",
+      "Breakfast",
+      "Planned transfers and sightseeing",
+      "Destination support"
+    ],
+    "notes": [
+      "Adventure activities and optional rides",
+      "Personal expenses",
+      "Mountain travel is weather-dependent"
+    ]
+  },
+  {
+    "id": "rishikesh",
+    "name": "Rishikesh Adventure Break",
+    "days": 4,
+    "nights": 3,
+    "category": "Adventure",
+    "price": 16900,
+    "featured": false,
+    "active": true,
+    "img": "https://images.unsplash.com/photo-1650341259809-9314b0de9268?auto=format&fit=crop&w=1200&q=85",
+    "route": "Rishikesh + riverside stays",
+    "short": "A compact active break with optional adventure time.",
+    "destinations": [],
+    "about": "A short, active break by the Ganges — rafting, riverside walks and enough free time to just sit by the water. Works well as a quick getaway rather than a full week off. Confirm final availability and pricing when you submit your booking request.",
+    "itinerary": [
+      {
+        "day": "Day 1 — Rishikesh",
+        "text": "arrival, riverside walk and orientation."
+      },
+      {
+        "day": "Day 2 — Rishikesh",
+        "text": "local exploration and optional rafting."
+      },
+      {
+        "day": "Day 3 — Nature & activity day",
+        "text": "flexible adventure or leisure."
+      },
+      {
+        "day": "Day 4 — Departure",
+        "text": "breakfast and check-out."
+      }
+    ],
+    "includes": [
+      "3 nights stay",
+      "Breakfast",
+      "Planned local transfers",
+      "Sightseeing plan"
+    ],
+    "notes": [
+      "Optional adventure fees",
+      "Personal expenses",
+      "River activities depend on season and operating conditions"
+    ]
+  }
+]
