@@ -1,0 +1,26 @@
+///<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Packages | Wanderly Admin</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body class="admin" data-page="admin-packages" data-root="../" data-auth="admin">
+    <header class="site-header admin-bar"><div class="container"><a href="../index.html" class="brand-logo">Wanderly<span class="admin-tag">ADMIN</span></a>
+      <nav class="main-nav"><ul><li><a href="../index.html">View Site</a></li><li><a href="#" id="admin-logout">Logout</a></li></ul></nav></div></header>
+    <div class="admin-wrap">
+      <aside class="admin-side"><a href="dashboard.html">Overview</a><a href="bookings.html">Bookings</a><a href="packages.html" class="active">Packages</a><a href="destinations.html">Destinations</a><a href="users.html">Users</a><a href="enquiries.html">Enquiries & Messages</a><hr /><a href="../index.html">&larr; Back to website</a></aside>
+      <section class="admin-main">
+        <h1>Package management</h1><p class="admin-sub">Add, edit, hide or delete tour packages. Changes appear instantly on the user side.</p>
+        <div class="panel"><div class="toolbar"><input class="grow" id="p-q" type="search" placeholder="Search packages…" /><button class="btn" id="p-add" type="button">+ Add package</button></div>
+          <p class="result-count" id="p-count"></p>
+          <div class="table-wrap"><table class="data-table"><thead><tr><th></th><th>Package</th><th>Category</th><th>Length</th><th>Price</th><th>Featured</th><th>Active</th><th></th></tr></thead><tbody id="p-body"></tbody></table></div></div>
+      </section>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/admin-catalog.js"></script>
+  </body>
+</html>
