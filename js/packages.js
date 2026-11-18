@@ -1,4 +1,4 @@
-///(function () {
+function () {
   "use strict";
   var W = window.WD, page = document.body.getAttribute("data-page");
   var active = function () { return W.get("packages").filter(function (p) { return p.active !== false; }); };
