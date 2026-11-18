@@ -1,4 +1,4 @@
-///(function () {
+function () {
   "use strict";
   var W = window.WD, page = document.body.getAttribute("data-page"), S = window.WD_SEED;
 
