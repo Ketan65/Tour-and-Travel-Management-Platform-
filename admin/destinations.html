@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Destinations | Wanderly Admin</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body class="admin" data-page="admin-destinations" data-root="../" data-auth="admin">
+    <header class="site-header admin-bar"><div class="container"><a href="../index.html" class="brand-logo">Wanderly<span class="admin-tag">ADMIN</span></a>
+      <nav class="main-nav"><ul><li><a href="../index.html">View Site</a></li><li><a href="#" id="admin-logout">Logout</a></li></ul></nav></div></header>
+    <div class="admin-wrap">
+      <aside class="admin-side"><a href="dashboard.html">Overview</a><a href="bookings.html">Bookings</a><a href="packages.html">Packages</a><a href="destinations.html" class="active">Destinations</a><a href="users.html">Users</a><a href="enquiries.html">Enquiries & Messages</a><hr /><a href="../index.html">&larr; Back to website</a></aside>
+      <section class="admin-main">
+        <h1>Destination management</h1><p class="admin-sub">Add or edit destination guides shown on the website.</p>
+        <div class="panel"><div class="toolbar"><input class="grow" id="d-q" type="search" placeholder="Search destinations…" /><button class="btn" id="d-add" type="button">+ Add destination</button></div>
+          <p class="result-count" id="d-count"></p>
+          <div class="table-wrap"><table class="data-table"><thead><tr><th></th><th>Destination</th><th>Category</th><th>Region</th><th>Stay</th><th>Popular</th><th></th></tr></thead><tbody id="d-body"></tbody></table></div></div>
+      </section>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/admin-catalog.js"></script>
+  </body>
+</html>
