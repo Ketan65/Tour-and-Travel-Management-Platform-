@@ -1,4 +1,4 @@
-///body{
+body{
   margin:0;
   font-family:Arial, Helvetica, sans-serif;
   background-color:#fff8ef;
@@ -20,7 +20,6 @@ img{
   margin-right:auto;
 }
 
-/* Header */
 .site-header{
   background-color:#0e4c46;
   color:#ffffff;
@@ -88,7 +87,6 @@ p{ margin-bottom:12px; }
   color:#0f6f66;
 }
 
-/* Big page banner image used on inner pages */
 .page-banner{
   position:relative;
   width:100%;
@@ -104,7 +102,6 @@ p{ margin-bottom:12px; }
   object-fit:cover;
 }
 
-/* Hero (homepage) */
 .hero-banner{
   position:relative;
   width:100%;
@@ -189,7 +186,6 @@ p{ margin-bottom:12px; }
   margin:0;
 }
 
-/* Cards */
 .card-grid{
   display:flex;
   flex-wrap:wrap;
@@ -256,7 +252,6 @@ p{ margin-bottom:12px; }
   margin-top:16px;
 }
 
-/* Detail pages */
 .detail-hero{
   display:flex;
   flex-wrap:wrap;
@@ -330,7 +325,6 @@ p{ margin-bottom:12px; }
   margin-bottom:6px;
 }
 
-/* Forms */
 .form-wrap{
   display:flex;
   flex-wrap:wrap;
@@ -436,7 +430,6 @@ textarea{
   color:#dceee9;
 }
 
-/* Footer */
 .site-footer{
   background-color:#0a332e;
   color:#cfe8e2;
@@ -474,7 +467,6 @@ textarea{
   color:#8bb3ab;
 }
 
-/* Selectable option cards - pure CSS, uses input:checked + label */
 .option-grid{
   display:flex;
   flex-wrap:wrap;
@@ -548,7 +540,6 @@ textarea{
   font-size:0.9rem;
 }
 
-/* Booking / confirmation receipt style */
 .confirm{
   max-width:760px;
   margin:30px auto;
@@ -613,7 +604,6 @@ textarea{
   color:#5a6f6b;
 }
 
-/* Responsive */
 @media(max-width:700px){
   .site-header .container{
     flex-direction:column;
@@ -627,9 +617,6 @@ textarea{
   .page-banner{ height:150px; }
 }
 
-/* =====================================================================
-   JavaScript phase additions (v2)
-   ===================================================================== */
 html{ scroll-behavior:smooth; }
 [hidden]{ display:none !important; }
 .site-header{ position:sticky; top:0; z-index:50; }
@@ -641,7 +628,6 @@ html{ scroll-behavior:smooth; }
 .main-nav a{ transition:background-color .15s; }
 .main-nav a:hover:not(.active){ background-color:rgba(255,255,255,.14); }
 
-/* Mobile menu */
 .nav-toggle{ display:none; background:none; border:1px solid rgba(255,255,255,.5); color:#fff; font-size:1.5rem; line-height:1; padding:4px 12px; cursor:pointer; }
 @media(max-width:860px){
   .site-header .container{ flex-direction:row; align-items:center; }
@@ -652,7 +638,6 @@ html{ scroll-behavior:smooth; }
   .main-nav a{ margin-left:0; border-top:1px solid rgba(255,255,255,.12); }
 }
 
-/* Toasts, back to top, modal */
 #toasts{ position:fixed; top:84px; right:16px; z-index:200; display:flex; flex-direction:column; gap:8px; }
 .toast{ background:#0e4c46; color:#fff; padding:12px 18px; border-left:5px solid #ffb547; box-shadow:0 6px 18px rgba(0,0,0,.2); max-width:320px; transition:opacity .3s; }
 .toast.error{ background:#8c2a22; border-left-color:#ff7a4a; }
@@ -667,7 +652,6 @@ html{ scroll-behavior:smooth; }
 .modal-x{ background:none; border:none; font-size:1.8rem; cursor:pointer; color:#5a6f6b; }
 .modal-body{ padding:18px 22px 22px; }
 
-/* Forms: validation + search/filter bars */
 input.invalid, select.invalid, textarea.invalid{ border-color:#b3261e; background:#fff6f5; }
 .field-error{ color:#b3261e; font-size:.82rem; margin-top:4px; }
 .form-msg{ background:#fff6f5; border-left:5px solid #b3261e; color:#8c2a22; padding:10px 14px; margin-bottom:14px; }
@@ -685,7 +669,6 @@ input[type=range]{ padding:0; border:none; accent-color:#ff7a4a; }
 .empty{ flex:1 1 100%; background:#fff; border:1px dashed #cdd9d5; padding:34px; text-align:center; }
 .empty p{ color:#5a6f6b; }
 
-/* Cards: favourites, chips */
 .card-media{ position:relative; }
 .card-media img{ display:block; }
 .fav-btn{ position:absolute; top:10px; right:10px; width:38px; height:38px; border-radius:50%; border:none; background:rgba(255,255,255,.92); color:#ff7a4a; font-size:1.3rem; cursor:pointer; line-height:1; box-shadow:0 2px 6px rgba(0,0,0,.2); }
@@ -697,7 +680,6 @@ input[type=range]{ padding:0; border:none; accent-color:#ff7a4a; }
 .chip:hover, .chip.on{ background:#0e4c46; color:#fff; border-color:#0e4c46; }
 .chip-row .chip{ margin:0; }
 
-/* Home: search panel + stats */
 .search-panel{ background:#0e4c46; border-left:5px solid #ffb547; padding:22px 26px; margin-top:20px; position:relative; }
 .search-panel h2{ color:#fff; margin:0 0 12px; font-size:1.3rem; }
 .search-row{ display:flex; gap:10px; flex-wrap:wrap; }
@@ -715,7 +697,6 @@ input[type=range]{ padding:0; border:none; accent-color:#ff7a4a; }
 .stats-strip b{ display:block; font-size:1.8rem; color:#ff7a4a; }
 .stats-strip span{ color:#5a6f6b; font-size:.85rem; }
 
-/* Status badges, stat cards, dashboard rows */
 .badge{ display:inline-block; padding:3px 10px; font-size:.78rem; font-weight:bold; border:1px solid; text-transform:capitalize; }
 .badge-pending{ background:#fff3de; color:#a15a1f; border-color:#ffd9a0; }
 .badge-approved{ background:#e5f6ea; color:#1f7a3d; border-color:#bfe3c6; }
@@ -742,7 +723,6 @@ input[type=range]{ padding:0; border:none; accent-color:#ff7a4a; }
 .role-pick input:checked + span{ color:#ff7a4a; }
 .role-pick label:has(input:checked){ border-color:#ff7a4a; background:#fff3de; }
 
-/* FAQ accordion */
 .faq-item{ border:1px solid #ffe3b0; background:#fff; margin-bottom:8px; }
 .faq-q{ width:100%; text-align:left; background:none; border:none; padding:14px 18px; font-size:1rem; font-weight:bold; color:#0e4c46; cursor:pointer; display:flex; justify-content:space-between; font-family:inherit; }
 .faq-q::after{ content:"+"; color:#ff7a4a; font-size:1.3rem; line-height:1; }
