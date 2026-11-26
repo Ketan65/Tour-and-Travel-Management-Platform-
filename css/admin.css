@@ -1,4 +1,3 @@
-/* Wanderly admin panel — extends style.css */
 body.admin{ background:#f4f7f6; background-image:none; }
 .site-header.admin-bar{ border-bottom-color:#ff7a4a; }
 .admin-tag{ background:#ff7a4a; color:#fff; font-size:.7rem; padding:2px 8px; margin-left:10px; vertical-align:middle; letter-spacing:.06em; }
