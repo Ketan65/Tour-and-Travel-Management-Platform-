@@ -1,4 +1,4 @@
-///(function () {
+(function () {
   "use strict";
   var W = (window.WD = {});
   var K = (W.KEYS = {
@@ -7,16 +7,13 @@
   });
   W.root = document.body.getAttribute("data-root") || "";
 
-  /* ---------- storage ---------- */
   W.read = function (k, fb) { try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : fb; } catch (e) { return fb; } };
   W.write = function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { W.toast("Browser storage is blocked or full.", "error"); return false; } };
   W.get = function (name) { return W.read(K[name], name === "favs" ? {} : []); };
   W.set = function (name, v) { return W.write(K[name], v); };
 
-  /* demo-only hash (NOT real security) */
   W.hash = function (s) { var h = 5381; s = "wd$" + s; for (var i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0; return "h" + (h >>> 0).toString(36); };
 
-  /* ---------- formatting ---------- */
   W.fmt = function (n) { return "\u20B9" + Number(n || 0).toLocaleString("en-IN"); };
   W.esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
   W.date = function (d) { if (!d) return "-"; var x = new Date(d.length === 10 ? d + "T00:00:00" : d); return isNaN(x) ? d : x.toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" }); };
@@ -28,13 +25,11 @@
   W.debounce = function (fn, ms) { var t; return function () { var a = arguments, c = this; clearTimeout(t); t = setTimeout(function () { fn.apply(c, a); }, ms || 200); }; };
   W.badge = function (s) { return '<span class="badge badge-' + W.esc(String(s).toLowerCase()) + '">' + W.esc(s) + "</span>"; };
 
-  /* ---------- lookups ---------- */
   W.pkg = function (id) { return W.get("packages").find(function (p) { return p.id === id; }); };
   W.dest = function (id) { return W.get("destinations").find(function (d) { return d.id === id; }); };
   W.user = function (id) { return W.get("users").find(function (u) { return u.id === id; }); };
   W.opt = function (list, id) { return window.WD_SEED[list].find(function (o) { return o.id === id; }); };
 
-  /* ---------- booking builder (shared by booking page, seed and admin) ---------- */
   W.price = function (pkg, travellers, room, transport, addons) {
     var r = W.opt("rooms", room), t = W.opt("transports", transport);
     var a = (addons || []).reduce(function (s, id) { var o = W.opt("addons", id); return s + (o ? o.price : 0); }, 0);
@@ -60,7 +55,6 @@
     };
   };
 
-  /* ---------- seed (first visit only) ---------- */
   W.seed = function (force) {
     if (!force && localStorage.getItem(K.seeded)) return;
     var S = window.WD_SEED; if (!S) return;
@@ -73,7 +67,6 @@
   };
   W.seed();
 
-  /* ---------- session ---------- */
   W.session = function () { try { var s = sessionStorage.getItem(K.session) || localStorage.getItem(K.session); return s ? JSON.parse(s) : null; } catch (e) { return null; } };
   W.me = function () { var s = W.session(); return s ? W.user(s.id) || null : null; };
   W.login = function (u, remember) {
@@ -92,7 +85,6 @@
   var guard = document.body.getAttribute("data-auth");
   if (guard) W.requireRole(guard);
 
-  /* ---------- toast / modal ---------- */
   W.toast = function (msg, type) {
     var box = W.$("#toasts"); if (!box) { box = document.createElement("div"); box.id = "toasts"; document.body.appendChild(box); }
     var t = document.createElement("div"); t.className = "toast " + (type || "ok"); t.textContent = msg; box.appendChild(t);
@@ -109,7 +101,6 @@
   W.closeModal = function () { var m = W.$("#wd-modal"); if (m) m.remove(); };
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") W.closeModal(); });
 
-  /* ---------- form validation ---------- */
   W.v = {
     email: function (s) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(s); },
     phone: function (s) { return /^\+?\d{10,13}$/.test(s.replace(/[\s-]/g, "")); },
@@ -119,7 +110,6 @@
   };
   W.clearErrs = function (f) { W.$$(".field-error", f).forEach(function (e) { e.remove(); }); W.$$(".invalid", f).forEach(function (e) { e.classList.remove("invalid"); }); };
   W.setErr = function (el, msg) { el.classList.add("invalid"); var g = el.closest(".form-group") || el.parentNode; var d = document.createElement("div"); d.className = "field-error"; d.textContent = msg; g.appendChild(d); };
-  /* rules: { fieldId: [fn(value, el) -> bool, "message"] } */
   W.validate = function (form, rules) {
     W.clearErrs(form); var first = null;
     Object.keys(rules).forEach(function (id) {
@@ -133,7 +123,6 @@
     var el = e.target; if (el.classList && el.classList.contains("invalid")) { el.classList.remove("invalid"); var g = el.closest(".form-group"); if (g) { var x = g.querySelector(".field-error"); if (x) x.remove(); } }
   });
 
-  /* ---------- pager / files ---------- */
   W.pager = function (box, total, page, per, go) {
     var pages = Math.max(1, Math.ceil(total / per)); if (!box) return;
     if (pages <= 1) { box.innerHTML = ""; return; }
@@ -167,7 +156,6 @@
   };
   W.resetAll = function () { Object.keys(K).forEach(function (k) { if (k !== "session") localStorage.removeItem(K[k]); }); W.seed(true); };
 
-  /* ---------- reusable cards ---------- */
   W.cards = {
     package: function (p) {
       return '<div class="card"><img src="' + W.esc(p.img) + '" alt="' + W.esc(p.name) + '" loading="lazy"><div class="card-body"><h3>' + W.esc(p.name) + '</h3><div class="meta"><span>' + p.days + " Days / " + p.nights + " Nights</span><span>" + W.esc(p.category) + "</span></div><p>" + W.esc(p.short) + "</p><p><strong>" + W.esc(p.route) + '</strong></p><div class="price">' + W.fmt(p.price) + '</div><div class="button-row"><a class="btn" href="package-details.html#' + W.esc(p.id) + '">Full Details</a><a class="btn btn-secondary" href="booking.html#' + W.esc(p.id) + '">Book This</a></div></div></div>';
@@ -177,7 +165,6 @@
     }
   };
 
-  /* ---------- page enhancements ---------- */
   var PLACE = "data:image/svg+xml;utf8," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0e4c46"/><stop offset="1" stop-color="#ffb547"/></linearGradient></defs><rect width="800" height="500" fill="url(#g)"/><text x="400" y="265" font-family="Arial" font-size="54" fill="#fff" text-anchor="middle">Wanderly</text></svg>');
   document.addEventListener("error", function (e) { var i = e.target; if (i && i.tagName === "IMG" && !i.getAttribute("data-fb")) { i.setAttribute("data-fb", "1"); i.src = PLACE; } }, true);
 
