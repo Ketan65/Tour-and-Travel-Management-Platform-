@@ -1,4 +1,4 @@
-///(function () {
+(function () {
   "use strict";
   var W = window.WD, page = document.body.getAttribute("data-page");
 
@@ -8,7 +8,6 @@
     });
   }
 
-  /* ---------------- LOGIN ---------------- */
   if (page === "login") {
     var form = W.$("#login-form"), q = W.params();
     if (q.get("denied")) W.toast("Admin access needs an admin account.", "error");
@@ -28,7 +27,6 @@
     eyeToggles();
   }
 
-  /* ---------------- REGISTER ---------------- */
   if (page === "register") {
     var rf = W.$("#register-form");
     rf.addEventListener("submit", function (e) {
@@ -53,7 +51,6 @@
     eyeToggles();
   }
 
-  /* ---------------- USER DASHBOARD ---------------- */
   if (page === "dashboard") {
     var me = W.me(); if (!me) return;
     var mine = W.get("bookings").filter(function (b) { return b.userId === me.id; }).sort(function (a, b) { return b.createdAt < a.createdAt ? -1 : 1; });
@@ -74,7 +71,6 @@
       return '<div class="row-item"><div><strong>' + W.esc(x.id) + "</strong> · " + W.esc(x.type) + " · " + W.esc(x.destination) + (x.reply ? '<div class="reply-box"><strong>Wanderly replied:</strong> ' + W.esc(x.reply) + "</div>" : "") + '</div><div class="row-end">' + W.badge(x.status === "New" ? "Pending" : x.status) + "</div></div>";
     }).join("") : '<p class="small">No service enquiries yet.</p>';
 
-    /* profile */
     var pf = W.$("#profile-form");
     W.$("#p-name").value = me.name; W.$("#p-email").value = me.email; W.$("#p-phone").value = me.phone || ""; W.$("#p-city").value = me.city || "";
     W.$("#p-since").textContent = W.date(me.joined);
