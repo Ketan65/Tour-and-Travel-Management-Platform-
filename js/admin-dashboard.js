@@ -1,4 +1,4 @@
-///(function () {
+(function () {
   "use strict";
   var W = window.WD; if (!W.me() || W.me().role !== "admin") return;
   function draw() {
